@@ -35,12 +35,12 @@ $('#scroll_top_bottom_buttom').on ('click', function(){
 
 $(window).on ('scroll', function(){
     var topbtn = $ (this).scrollTop()
-    if ( topbtn > 300 ) {
-        $('#scroll_top_bottom_buttom').fadeIn (100)
+    if ( topbtn > 500 ) {
+        $('#scroll_top_bottom_buttom').fadeIn (1000)
     }
 
     else {
-        $('#scroll_top_bottom_buttom').fadeOut (100)
+        $('#scroll_top_bottom_buttom').fadeOut (1000)
     }
 })
 
