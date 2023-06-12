@@ -19,7 +19,7 @@ $(function() {
 // sticky menu area js
 $(window).on ('scroll', function(){
     let sticky = $ ( this ).scrollTop()
-    if ( sticky > 100 ) {
+    if ( sticky > 200 ) {
         $('.navbar').addClass('sticky_menu')
     }
 
@@ -30,17 +30,17 @@ $(window).on ('scroll', function(){
 
 // scroll Top and bottom
 $('#scroll_top_bottom_buttom').on ('click', function(){
-    $('html,body').animate({scrollTop:0}, 2000)
+    $('html,body').animate({scrollTop:0}, 1000)
 });
 
 $(window).on ('scroll', function(){
-    var topbtn = $ (this).scrollTop()
-    if ( topbtn > 500 ) {
-        $('#scroll_top_bottom_buttom').fadeIn (1000)
+    let topbtn = $ (this).scrollTop()
+    if ( topbtn > 700 ) {
+        $('#scroll_top_bottom_buttom').fadeIn (700)
     }
 
     else {
-        $('#scroll_top_bottom_buttom').fadeOut (1000)
+        $('#scroll_top_bottom_buttom').fadeOut (700)
     }
 })
 
